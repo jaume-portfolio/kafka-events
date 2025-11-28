@@ -20,7 +20,7 @@ This project is a Python Kafka pipeline that simulates user and purchase events.
 
 1. **Clone the repository and start the containers:**
 ```bash
-git clone https://github.com/jaume-portfolio
+git clone https://github.com/jaume-portfolio/kafka-events
 cd kafka-events
 docker compose down -v && docker compose up -d --build && docker compose logs -f app
 ```
