@@ -41,7 +41,7 @@ docker compose down -v && docker compose up -d --build && docker compose logs -f
 - Services included:  
   - **Zookeeper**: Kafka coordination  
   - **Kafka broker**: Event streaming  
-  - **Kafka UI**: Topic monitoring  
+  - **Kafka UI**: Topic monitoring. Inspect messages at http://localhost:8080
   - **PostgreSQL**: Stores user and purchase events  
   - **Python app**: Generates events and runs consumers  
 
@@ -55,3 +55,5 @@ Use a client like **DataGrip**, **DBeaver**, or **pgAdmin**:
 - **Database:** `stream`  
 - **User:** `postgres`  
 - **Password:** `postgres`  
+
+Find the tables in the schema stream_target
