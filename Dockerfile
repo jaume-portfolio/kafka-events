@@ -16,4 +16,4 @@ COPY . .
 # No CMD here; Docker Compose will run the scripts
 # Print Python path at container start and then run scripts
 # At container start, list files and then run your scripts
-CMD sh -c "echo 'Folder contents:' && ls /app && python pipeline/main.py"
+CMD sh -c "python pipeline/main.py"

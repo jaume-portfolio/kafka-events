@@ -6,6 +6,13 @@ import time
 
 
 def main():
+    """
+    Start the full streaming pipeline:
+    - Launches Kafka producer to generate users and purchases
+    - Starts user consumer after 2 seconds
+    - Starts purchase consumer after 5 seconds
+    - Uses multiprocessing to run producer and consumers concurrently
+    """
     print("Streaming started...", flush=True)
     stream_thread = Process(target=StreamEvents.generate_users)
     stream_thread.start()
